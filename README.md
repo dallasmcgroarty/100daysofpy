@@ -1,7 +1,7 @@
 # 100daysofpy
     100 days of learning python
     
-## covered in this journey
+## Covered In This Journey
 
     Python 3 - the latest version of Python
 
