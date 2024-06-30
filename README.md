@@ -1,8 +1,8 @@
 # 100daysofpy
-
+    100 days of learning python
+    
 ## covered in this journey
 
-    100 days of learning python
     Python 3 - the latest version of Python
 
     PyCharm, Jupyter Notebook, Google Colab
