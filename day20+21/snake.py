@@ -7,14 +7,21 @@ class Snake:
     self.create_snake()
     self.head = self.segments[0]
 
+  def create_segment(self,pos=(0,0)):
+    seg = Turtle(shape='square')
+    seg.penup()
+    seg.color('white')
+    seg.goto(pos)
+    return seg
+  
   def create_snake(self):
     for i in range(0,3):
       x = i * -20
-      seg = Turtle(shape='square')
-      seg.penup()
-      seg.color('white')
-      seg.teleport(x, 0)
+      seg = self.create_segment((x,0))
       self.segments.append(seg)
+
+  def grow(self):
+    self.segments.append(self.create_segment(self.segments[-1].position()))
   
   def move(self):
     for i in range(len(self.segments)-1, 0, -1):
